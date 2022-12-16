@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    font-size: 2vh;
+}
+
+a {
+    font-size: 0.7rem;
+}
+
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: conic-gradient(at 35% 65%, #fff 0deg, #fff 180deg, #1AEBB6 0deg, #1AEBB6 180deg);
+}
+
+#box {
+    height: 90vh;
+    width: 80vw;
+    box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.24);
+    border-radius: 0.4rem;
+}
+
+#box *{
+    transition: 0.5s;
+}
+
+#conteiner {
+    height: 100%;
+    width: 68.7%;
+    float: right;
+}
+
+#help {
+    position: relative;
+    text-align: right;
+    margin: 5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    margin-top: 1vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 5vh;
+}
+
+label {
+    margin-top: 10vh;
+    margin-right: 50%;
+    transform: translateX(50%);
+}
+
+input {
+    position: relative;
+    border-radius: 0.3rem;
+    border: 0.1rem solid #00000082;
+    width: 50%;
+    height: 5vh;
+    margin-top: 0.5vh;
+    padding: 0.5%;
+}
+
+input:focus {
+    border: #1AEBB6 0.2rem solid;
+}
+
+input + label {
+    margin-top: 3vh;
+}
+
+input[type="submit"] {
+    background-color: #1AEBB6;
+    border: none;
+    cursor: pointer;
+    margin-top: 10vh;
+}
+
+input[type="submit"]:hover {
+    background-color: #14b88f;
+}
+
+@media (max-width: 750px) {
+    body {
+        background-image: conic-gradient(at 100% 0%, #1AEBB6 0deg, #1AEBB6 360deg);    
+    }
+    
+    #box {
+        height: 90vh;
+        width: 90vw;
+        box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.24);
+        background-color: white;
+    }
+
+    #conteiner {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        float: none;
+    }
+
+    input {
+        width: 65%;
+    }
+    
+    label {
+        margin-right: 65%;
+    }
+
+    form p {
+        margin-left: 65%;
+    }
+}
